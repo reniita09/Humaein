@@ -8,7 +8,7 @@ import axios from 'axios'
  * - Provides isAuthenticated() JWT check
  */
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000'
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://humaein-backend.onrender.com:8000'
 const TENANT_ID = 'HUMAEIN'
 
 export const api = axios.create({
