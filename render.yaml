@@ -27,9 +27,3 @@ services:
     envVars:
       - key: VITE_API_BASE
         value: ""
-
-databases:
-  - name: rcm-db
-    engine: postgres
-    version: "15"
-    plan: starter
