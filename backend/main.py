@@ -16,10 +16,12 @@ from .routes.metrics import router as metrics_router
 def create_app() -> FastAPI:
     app = FastAPI(title="Humaein Mini RCM Validation Engine", version="0.1.0")
 
+    origins = [origin.strip() for origin in settings.FRONTEND_ORIGIN.split(",")]
+
     # CORS
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=[settings.FRONTEND_ORIGIN],
+        allow_origins=origins,
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
