@@ -1,0 +1,16 @@
+.scroll-reveal {
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-reveal-text {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.scroll-reveal .word {
+  display: inline-block;
+  margin-right: 0.25em;
+}
+
